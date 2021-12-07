@@ -44,14 +44,43 @@ const author = document.getElementById('author');
 const job = document.getElementById('job');
 const info = document.getElementById('info');
 
-const prevBtn = document.querySelector('prev-btn');
-const nextBtn = document.querySelector('next-btn');
-const randomBtn = document.querySelector('random-btn');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const randomBtn = document.querySelector('.random-btn');
 
 //set starting item//
 let currentItem = 0;
 
-//load initia; item//
-window.addEventListener('DOMContentLoaded', function()){
+//load initial item//
+window.addEventListener("DOMContentLoaded", function () {
+  showPerson(currentItem);
+  });
 
-}
+  //words//
+
+  function showPerson(person){
+    const item = reviews[person];
+    img.src = item.img;
+    author.textContent = item.name;
+    job.textContent = item.job
+    info.textContent = item.text;
+    
+  }
+
+  //show next
+  nextBtn.addEventListener('click', function (){
+    currentItem++;
+    showPerson(currentItem);
+  });
+
+  prevBtn.addEventListener('click', function (){
+    currentItem--;
+    showPerson(currentItem);
+  });
+
+  randomBtn.addEventListener('click', function (){
+    currentItem++;
+    showPerson(currentItem);
+  });
+
+
