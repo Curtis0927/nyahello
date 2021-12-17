@@ -46,3 +46,10 @@ btn.addEventListener("click", function () {
 function getRandomNumber() {
   return Math.floor(Math.random() * hex.length);
 }
+//navbar//
+const navToggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".links");
+
+navToggle.addEventListener('click', function(){
+links.classList.toggle("show-links");
+});
