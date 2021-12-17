@@ -1,6 +1,5 @@
 //like dislike//
 let count = 0;
-let number2 = 2;
 
 const value = document.querySelector("#likeDislike");
 const likes = document.querySelectorAll(".like");
@@ -26,8 +25,7 @@ likes.forEach(function (like) {
       value.style.color = "red";
     }
     if (count === 0) {
-      value.style;
-      e.color = "black";
+      value.style.color = "black";
     }
     value.textContent = count;
   });
