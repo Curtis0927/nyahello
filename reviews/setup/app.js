@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", function () {
     
   }
 
-  //show next
+  //show next//
   nextBtn.addEventListener('click', function (){
     currentItem++;
     if(currentItem > reviews.length - 1){
