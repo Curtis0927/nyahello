@@ -55,9 +55,6 @@ let currentItem = 0;
 window.addEventListener("DOMContentLoaded", function () {
   showPerson();
   });
-
-  //words//
-
   function showPerson(){
     const item = reviews[currentItem];
     img.src = item.img;
@@ -75,7 +72,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
     showPerson();
   });
-
+// show previous//
   prevBtn.addEventListener('click', function (){
     currentItem--;
     if(currentItem < 0) {
