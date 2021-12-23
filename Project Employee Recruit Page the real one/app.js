@@ -2,7 +2,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
-navToggle.addEventListener("click", function () {
+navToggle.addEventListener("mouseover", function () {
   links.classList.toggle("show-links");
 });
 //like dislike//
@@ -144,6 +144,4 @@ prevBtn.addEventListener("click", function () {
 
 //change font size//
 
-function fontChanger() {
-  document.getElementById("ratetitle").style.fontSize = "x-large";
-}
+document.getElementById("ratetitle").style.fontSize = xx-large;
