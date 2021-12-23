@@ -2,7 +2,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
-navToggle.addEventListener("mouseover", function () {
+navToggle.addEventListener("click", function () {
   links.classList.toggle("show-links");
 });
 //like dislike//
@@ -47,12 +47,14 @@ btn.addEventListener("click", function () {
   let hexColor3 = "#";
   let hexColor4 = "#";
   let hexColor5 = "#";
+  let hexColor6= "#";
   for (let i = 0; i < 6; i++) {
     hexColor1 += hex[getRandomNumber()];
     hexColor2 += hex[getRandomNumber()];
     hexColor3 += hex[getRandomNumber()];
     hexColor4 += hex[getRandomNumber()];
     hexColor5 += hex[getRandomNumber()];
+    hexColor6 += hex[getRandomNumber()];
   }
   color.textContent = hexColor1;
   document.body.style.backgroundColor = hexColor1;
@@ -64,6 +66,8 @@ btn.addEventListener("click", function () {
   document.getElementById('rate').style.backgroundColor= hexColor4;
   color.textContent = hexColor5;
   document.getElementById('employees1').style.backgroundColor= hexColor5;
+  color.textContent = hexColor6;
+  document.getElementById('fontChanger').style.backgroundColor= hexColor6;
   
 });
 function getRandomNumber() {
@@ -142,6 +146,15 @@ prevBtn.addEventListener("click", function () {
   showPerson();
 });
 
-//change font size//
+//change font size of 2 "titles"//
+const fSize = ["xx-small","x-small","small","medium","large","x-large","xx-large"];
+const btn1 = document.getElementById("btnSwitch2");
+const fontSize = document.querySelector("fontsize");
 
-document.getElementById("ratetitle").style.fontSize = xx-large;
+function fontSizeChange1(){
+  document.getElementById("ratetitle").style.fontSize = fSize[getRandomNumber1()];
+  document.getElementById("emp").style.fontSize = fSize[getRandomNumber1()];
+}
+function getRandomNumber1(){
+  return Math.floor(Math.random()*fSize.length);
+}

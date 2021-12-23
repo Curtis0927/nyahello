@@ -77,6 +77,15 @@ body {
   border-radius: 3px;
   cursor: pointer;
 }
+#fontChanger{
+  color: white;
+  width: 500px;
+  padding: 0.69rem;
+  background-color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  align-items: center
+}
 
 /*navbar*/
 /*
@@ -247,7 +256,7 @@ nav {
 }
 .nav-toggle:hover {
   color: var(--clr-primary-1);
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
 .logo {
   height: 40px;
